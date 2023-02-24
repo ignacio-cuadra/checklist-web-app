@@ -6,7 +6,9 @@
     <label for="password" class="font-semibold">Contraseña</label>
     <input type="password" placeholder="Contraseña" class="p-2 border" />
     <app-button [isLoading]="false">Acceder</app-button>
-    <a href="#" class="text-blue-600 hover:text-blue-500 underline"
+    <a
+      [routerLink]="['/did-you-forget-your-password']"
+      class="text-blue-600 hover:text-blue-500 underline"
       >Recuperar contraseña</a
     >
   </div>

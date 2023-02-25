@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Tareas</th>
+      <th>Tiempo restante</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let checklist of checklists">
+      <td>{{ checklist.title }}</td>
+      <td>{{ checklist.items.length }}</td>
+      <td>{{ "NA" }}}</td>
+      <td>
+        <app-button>Completar</app-button>
+        <app-button>Editar</app-button>
+        <app-button>Eliminar</app-button>
+      </td>
+    </tr>
+  </tbody>
+</table>

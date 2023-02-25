@@ -6,3 +6,38 @@ html,
 body {
   height: 100%;
 }
+
+label {
+  @apply font-semibold;
+}
+input {
+  @apply p-2;
+  @apply border;
+}
+
+a {
+  @apply text-blue-600;
+  @apply hover:text-blue-500;
+  @apply underline;
+}
+
+.card {
+  @apply p-2;
+  @apply bg-white;
+  @apply rounded-sm;
+  @apply border;
+  @apply shadow-sm;
+}
+
+.table th,
+.table td {
+  @apply p-2;
+}
+.table thead {
+  @apply border-b;
+  @apply border-b-2;
+}
+
+.table thead th {
+  @apply font-semibold;
+}

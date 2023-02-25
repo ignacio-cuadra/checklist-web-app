@@ -1,0 +1,27 @@
+<div class="h-full bg-gray-100 flex flex-col">
+  <header class="bg-white border-b">
+    <div class="flex justify-between items-center py-2 mx-auto container">
+      <app-logo></app-logo>
+      <nav>
+        <a>Inicio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="h-full py-2">
+    <div [class]="isContained ? 'container mx-auto' : ''">
+      <h1 *ngIf="title" class="mb-5 text-4xl">{{ title }}</h1>
+      <app-breadcrumb
+        *ngIf="breadcrumb"
+        [items]="breadcrumb"
+        class="mb-5"
+      ></app-breadcrumb>
+      <ng-content></ng-content>
+    </div>
+  </main>
+  <footer class="bg-white">
+    <small
+      >Desarollado por
+      <a href="https://github.com/ignacio-cuadra">Ignacio Cuadra</a></small
+    >
+  </footer>
+</div>
